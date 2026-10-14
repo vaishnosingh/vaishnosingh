@@ -1,6 +1,8 @@
 <!-- ═══════════════ ANIMATED HEADER ═══════════════ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=Vaishno%20Kumar%20Singh&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20Python%20%7C%20AI%20%26%20ML&descAlignY=58&descSize=20" alt="header" width="100%"/>
+  <a href="https://github.com/vaishnosingh">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=Vaishno%20Kumar%20Singh&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20Python%20%7C%20AI%20%26amp%3B%20ML&descAlignY=58&descSize=20" alt="header" width="100%"/>
+  </a>
 </p>
 
 <!-- ═══════════════ TYPING ANIMATION ═══════════════ -->
@@ -11,8 +13,12 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="profile views" />
-  <img src="https://img.shields.io/github/followers/vaishnosingh?label=Followers&style=for-the-badge&logo=github&color=8957e5" alt="followers" />
+  <a href="https://github.com/vaishnosingh">
+    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fvaishnosingh%2Fvaishnosingh.json&style=for-the-badge&label=Profile%20Views&color=0e75b6" alt="profile views" />
+  </a>
+  <a href="https://github.com/vaishnosingh?tab=followers">
+    <img src="https://img.shields.io/github/followers/vaishnosingh?label=Followers&style=for-the-badge&logo=github&color=8957e5" alt="followers" />
+  </a>
   <img src="https://img.shields.io/badge/Made%20in-India-ff9933?style=for-the-badge" alt="made in india" />
 </p>
 
