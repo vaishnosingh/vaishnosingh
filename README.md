@@ -66,7 +66,7 @@ me.say_hi()
 ## 🛠️ Languages & Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=py,go,fastapi,django,postgres,mysql,mariadb,pytorch,tensorflow,opencv,pandas,linux&perline=6" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=py,go,fastapi,django,postgres,mysql,pytorch,tensorflow,opencv,sklearn,git,linux&perline=6" alt="tech stack" />
 </p>
 
 <div align="center">
@@ -75,9 +75,9 @@ me.say_hi()
 |:--|:--|
 | **Languages** | Python · Go |
 | **Backend** | FastAPI · Django |
-| **Databases** | PostgreSQL · MySQL · MariaDB |
-| **AI / ML / CV** | PyTorch · TensorFlow · OpenCV · Pandas |
-| **Platform** | Linux |
+| **Databases** | PostgreSQL · MySQL |
+| **AI / ML / CV** | PyTorch · TensorFlow · OpenCV · Scikit-Learn |
+| **Tools & OS** | Git · Linux |
 
 </div>
 
@@ -95,13 +95,13 @@ me.say_hi()
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vaishnosingh&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/activity-graph.svg" alt="activity graph" width="100%" />
 </p>
 
 ## 🏆 Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=vaishnosingh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&column=7" alt="trophies" />
+  <img src="https://trophy.ryglcloud.net/?username=vaishnosingh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&column=7" alt="trophies" />
 </p>
 
 ## 🐍 Contribution Snake
