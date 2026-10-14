@@ -1,69 +1,69 @@
+<!-- ANIMATED HEADER BANNER -->
 <div align="center">
-  <h1>Hi 👋, I'm Vaishno Kumar Singh</h1>
-  <h3>🚀 Software Developer | AI & Machine Learning Enthusiast from India 🇮🇳</h3>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Vaishno%20Kumar%20Singh&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=35&desc=AI%2FML%20Engineer%20%E2%80%A2%20Backend%20Architect%20%E2%80%A2%20Systems%20Builder&descAlignY=58&descSize=18" alt="Header Banner" />
 
+  <!-- ANIMATED TYPING SVG -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=80&lines=Hi+%F0%9F%91%8B%2C+I'm+Vaishno+Kumar+Singh;Working+on+Python%2C+AI+%26+Machine+Learning+%F0%9F%A7%A0;Currently+Learning+Golang%2C+Django+%26+TensorFlow+%F0%9F%9A%80;Building+Low-Latency+Backends+with+FastAPI%2C+Go+%26+ScyllaDB+%E2%9A%A1" alt="Typing SVG" />
+  </a>
+
+  <!-- SOCIAL & PROFILE BADGES -->
   <p align="center">
     <a href="https://www.linkedin.com/in/vshnsngh333" target="_blank" rel="noreferrer">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
     <a href="https://www.codechef.com/users/vshn_sngh" target="_blank" rel="noreferrer">
       <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" />
     </a>
     <a href="https://www.hackerrank.com/profile/vaishnosingh9" target="_blank" rel="noreferrer">
-      <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank" />
+      <img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=HackerRank&logoColor=black" alt="HackerRank" />
     </a>
     <a href="https://instagram.com/vshnsngh" target="_blank" rel="noreferrer">
       <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
     </a>
     <a href="mailto:vaishnosingh9@gmail.com">
-      <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+      <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
     </a>
+    <img src="https://komarev.com/ghpvc/?username=vshn-sngh&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="vshn-sngh views" />
   </p>
 </div>
 
----
+<!-- ANIMATED RAINBOW DIVIDER -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Divider" />
 
-### 👨‍💻 About Me
+### ⚡ `<AboutMe />`
 
-- 🔭 I’m currently working on **Python, Artificial Intelligence & Machine Learning**
-- 🌱 I’m currently learning **Django and TensorFlow**
-- 💬 Ask me about **Python, Data Structures & Algorithms (DSA)**
-- 📫 Reach me at **[vaishnosingh9@gmail.com](mailto:vaishnosingh9@gmail.com)**
-- ⚡ Fun fact: *I think I am funny* 🌝
+<img align="right" width="320" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding Animation" />
 
----
+- 🔭 **Currently Working On:** Python, Artificial Intelligence & Machine Learning
+- 🌱 **Currently Learning:** **Golang (Go)**, **Django**, and **TensorFlow**
+- ⚙️ **Backend & Data Engineering:** Designing high-throughput APIs and distributed databases with **FastAPI**, **PostgreSQL**, and **ScyllaDB**
+- 💬 **Ask Me About:** Python, Golang, Data Structures & Algorithms (DSA), and System Design
+- 📫 **Reach Me At:** **[vaishnosingh9@gmail.com](mailto:vaishnosingh9@gmail.com)**
+- ⚡ **Fun Fact:** *I think I am funny* 🌝
 
-### 🛠️ Languages & Tech Stack
+```go
+package main
 
-**Programming Languages**
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-</p>
+import "fmt"
 
-**AI, Machine Learning & Data Science**
-<p>
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
-</p>
+type Developer struct {
+    Name          string
+    Location      string
+    CurrentFocus  []string
+    Learning      []string
+    Databases     []string
+    FunFact       string
+}
 
-**Backend, Databases & Systems**
-<p>
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-</p>
-
----
-
-### 📊 GitHub Analytics
-
-<div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=vshn-sngh&show_icons=true&locale=en&hide_border=true" alt="vshn-sngh stats" />
-  <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs?username=vshn-sngh&show_icons=true&locale=en&layout=compact&hide_border=true" alt="vshn-sngh top languages" />
-</div>
+func main() {
+    vaishno := Developer{
+        Name:         "Vaishno Kumar Singh",
+        Location:     "India 🇮🇳",
+        CurrentFocus: []string{"AI & Machine Learning", "High-Performance Backends", "DSA"},
+        Learning:     []string{"Golang", "Django", "TensorFlow"},
+        Databases:    []string{"ScyllaDB", "PostgreSQL", "MySQL", "MariaDB"},
+        FunFact:      "I think I am funny 🌝",
+    }
+    fmt.Printf("Building the future with %s 🚀\n", vaishno.Name)
+}
