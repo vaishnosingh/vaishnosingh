@@ -24,6 +24,23 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
+      - name: Constrain snake inside contribution grid
+        run: |
+          python3 -c '
+          import re, glob
+          for path in glob.glob("dist/github-snake*.svg"):
+              with open(path, "r", encoding="utf-8") as f:
+                  c = f.read()
+              c = re.sub(r"viewBox=\"-16 -32 880 192\" width=\"880\" height=\"192\"", "viewBox=\"-8 -8 864 128\" width=\"864\" height=\"128\"", c)
+              def repl(m):
+                  x = max(0, min(832, int(m.group(1))))
+                  y = max(0, min(96, int(m.group(2))))
+                  return f"translate({x}px,{y}px)"
+              c = re.sub(r"translate\((-?\d+)px,(-?\d+)px\)", repl, c)
+              with open(path, "w", encoding="utf-8") as f:
+                  f.write(c)
+          '
+
       - name: Generate activity graph
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
