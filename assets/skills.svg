@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="1000" height="340" role="img" aria-label="Technical Arsenal — Modular Engineering Bays">
+  <title>Technical Arsenal — Modular Engineering Bays</title>
+  <defs>
+    <linearGradient id="skillsBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1322"/>
+      <stop offset="100%" stop-color="#080B12"/>
+    </linearGradient>
+    <linearGradient id="skillsTopBevel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Frame -->
+  <rect x="0.5" y="0.5" width="999" height="339" rx="16" fill="url(#skillsBg)" stroke="#1E293B" stroke-width="1"/>
+  <path d="M 16,1 L 984,1" stroke="url(#skillsTopBevel)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Top Title -->
+  <g transform="translate(36, 26)">
+    <text x="0" y="14" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="700" fill="#38BDF8" letter-spacing="1">MODULAR TECHNICAL ARSENAL</text>
+    <text x="0" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" fill="#94A3B8">Categorized computational frameworks, AI/ML tools, desktop compositors, and backend systems</text>
+  </g>
+
+  
+    <!-- Bay 01 -->
+    <g transform="translate(36, 68)">
+      <rect width="224" height="254" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <rect x="1" y="1" width="222" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      
+      <!-- Bay Header -->
+      <rect x="12" y="14" width="4" height="18" rx="2" fill="#38BDF8"/>
+      <text x="22" y="24" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" fill="#38BDF8">// 01</text>
+      <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">CORE LANGUAGES</text>
+      
+      <g transform="translate(12, 46)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Python</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Advanced</text>
+      </g>
+      <g transform="translate(12, 78)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Golang</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Microservices</text>
+      </g>
+      <g transform="translate(12, 110)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">C / C++</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Systems</text>
+      </g>
+      <g transform="translate(12, 142)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">TypeScript</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Web UI</text>
+      </g>
+      <g transform="translate(12, 174)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">QML</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Desktop</text>
+      </g>
+      <g transform="translate(12, 206)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#38BDF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">SQL</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Database</text>
+      </g>
+    </g>
+    <!-- Bay 02 -->
+    <g transform="translate(272, 68)">
+      <rect width="224" height="254" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <rect x="1" y="1" width="222" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      
+      <!-- Bay Header -->
+      <rect x="12" y="14" width="4" height="18" rx="2" fill="#818CF8"/>
+      <text x="22" y="24" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" fill="#818CF8">// 02</text>
+      <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">AI &amp; INTELLIGENCE</text>
+      
+      <g transform="translate(12, 46)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">PyTorch</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Deep Learning</text>
+      </g>
+      <g transform="translate(12, 78)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">TensorFlow</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Neural Nets</text>
+      </g>
+      <g transform="translate(12, 110)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">OpenCV</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Vision</text>
+      </g>
+      <g transform="translate(12, 142)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Scikit-Learn</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">ML Models</text>
+      </g>
+      <g transform="translate(12, 174)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">NumPy</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Tensors</text>
+      </g>
+      <g transform="translate(12, 206)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#818CF8"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Pandas</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Analytics</text>
+      </g>
+    </g>
+    <!-- Bay 03 -->
+    <g transform="translate(508, 68)">
+      <rect width="224" height="254" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <rect x="1" y="1" width="222" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      
+      <!-- Bay Header -->
+      <rect x="12" y="14" width="4" height="18" rx="2" fill="#06B6D4"/>
+      <text x="22" y="24" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" fill="#06B6D4">// 03</text>
+      <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">LINUX &amp; GRAPHICS</text>
+      
+      <g transform="translate(12, 46)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Hyprland</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Compositor</text>
+      </g>
+      <g transform="translate(12, 78)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Wayland</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Display Server</text>
+      </g>
+      <g transform="translate(12, 110)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Nothing Glyph</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Custom UI</text>
+      </g>
+      <g transform="translate(12, 142)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Linux (Ubuntu)</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Kernel &amp; CLI</text>
+      </g>
+      <g transform="translate(12, 174)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Shell</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">POSIX</text>
+      </g>
+      <g transform="translate(12, 206)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#06B6D4"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Audio APIs</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Speech</text>
+      </g>
+    </g>
+    <!-- Bay 04 -->
+    <g transform="translate(744, 68)">
+      <rect width="224" height="254" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <rect x="1" y="1" width="222" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      
+      <!-- Bay Header -->
+      <rect x="12" y="14" width="4" height="18" rx="2" fill="#10B981"/>
+      <text x="22" y="24" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" font-weight="700" fill="#10B981">// 04</text>
+      <text x="56" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="800" fill="#F8FAFC" letter-spacing="0.5">BACKEND &amp; PLATFORM</text>
+      
+      <g transform="translate(12, 46)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">FastAPI</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">High-Speed APIs</text>
+      </g>
+      <g transform="translate(12, 78)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Django</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Services</text>
+      </g>
+      <g transform="translate(12, 110)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">PostgreSQL</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Relational</text>
+      </g>
+      <g transform="translate(12, 142)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">MySQL</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Stores</text>
+      </g>
+      <g transform="translate(12, 174)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Docker</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Containers</text>
+      </g>
+      <g transform="translate(12, 206)">
+        <rect width="200" height="26" rx="6" fill="#131C31" stroke="#1E293B" stroke-width="0.8"/>
+        <rect x="0" y="6" width="2.5" height="14" rx="1.25" fill="#10B981"/>
+        <text x="10" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="700" fill="#F8FAFC">Git &amp; CI/CD</text>
+        <text x="190" y="17" text-anchor="end" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="9" fill="#94A3B8">Pipelines</text>
+      </g>
+    </g>
+</svg>

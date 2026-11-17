@@ -1,59 +1,95 @@
 <div align="center">
 
-<!-- HERO TELEMETRY HUD -->
-<img src="./assets/hero.svg" width="100%" alt="Vaishno K Singh - System Architect & Backend Engineer" />
-
-<br/><br/>
-
-<!-- SECTION 01: ABOUT -->
-<img src="./assets/h-about.svg" width="100%" alt="About Section Header" />
-<img src="./assets/about.svg" width="100%" alt="System Telemetry & Architecture Focus" />
-
-<br/><br/>
-
-<!-- SECTION 02: TECH STACK & ORBIT -->
-<img src="./assets/h-stack.svg" width="100%" alt="Tech Stack Header" />
-<img src="./assets/orbit.svg" width="100%" alt="Tech Orbit & Engineering Matrix" />
+<!-- 3D ISOMETRIC WORKSTATION HERO -->
+<a href="https://github.com/vaishnosingh">
+  <img src="./assets/hero.svg" alt="Vaishno Kumar Singh — Systems Architect & AI Engineer" width="100%"/>
+</a>
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=java,py,ts,nodejs,spring,fastapi,postgres,mongodb,redis,kafka,docker,aws,linux,git,arduino&perline=15&theme=dark" alt="Tech Icons" />
+<!-- TELEMETRY BADGES -->
+<img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=SYSTEM+VIEWS&style=for-the-badge&color=06B6D4&labelColor=0B0F19" alt="Profile Views"/>
+<img src="https://img.shields.io/badge/LOCATION-INDIA%20🇮🇳-10B981?style=for-the-badge&labelColor=0B0F19" alt="Location: India"/>
+<img src="https://img.shields.io/badge/FOCUS-AI%20%26%20GRAPHICS-38BDF8?style=for-the-badge&labelColor=0B0F19" alt="Focus: AI & Graphics"/>
+<img src="https://img.shields.io/badge/STATUS-OPEN%20FOR%20COLLABORATION-818CF8?style=for-the-badge&labelColor=0B0F19" alt="Status: Open"/>
 
-<br/><br/>
-
-<!-- SECTION 03: LIVE METRICS & CONTRIBUTION SKYLINE -->
-<img src="./assets/h-stats.svg" width="100%" alt="Live Telemetry Header" />
-<img src="./assets/stats.svg" width="100%" alt="Live GitHub Stats" />
-<img src="./assets/skyline.svg" width="100%" alt="Commit Velocity Skyline" />
+</div>
 
 <br/>
 
-<!-- LIVE CONTRIBUTION SNAKE (FROM .github/workflows/snake.yml) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake.svg" />
-  <img alt="Contribution Grid Snake" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake-dark.svg" width="100%" />
-</picture>
+### `// 01 · THESIS & ARCHITECTURAL FOCUS`
 
-<br/><br/>
+> *"Engineering at the intersection of computational intelligence, Linux desktop compositors, and robust backend systems."*
 
-<!-- SECTION 04: CONNECT -->
-<img src="./assets/h-connect.svg" width="100%" alt="Connect Header" />
+I am a software developer and systems builder dedicated to crafting mathematically sound, high-throughput software and bespoke graphic environments. My work spans from architecting custom **Hyprland** Wayland desktop interfaces with real-time astronomical ephemeris calculations and Nothing OS glyph aesthetics, to deploying **computer vision pipelines** and Linux voice-to-text engines in Python, Golang, and C.
 
-<p align="center">
-  <a href="https://linkedin.com/in/vaishnosingh" target="_blank">
-    <img src="https://img.shields.io/badge/LINKEDIN_%2F%2F_CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+---
+
+### `// 02 · SPOTLIGHT SYSTEMS & REPOSITORIES`
+
+| System / Repository | Architecture & Engineering Highlights | Core Stack |
+| :--- | :--- | :--- |
+| **🌌 [`ricing`](https://github.com/vaishnosingh/ricing)** | Custom **Hyprland** + Nothing OS Glyph interface powered by Swiss Ephemeris astronomical calculations, Nakshatra celestial mechanics, real-time moon phase gravity orb, and MagicUI morphing clock. | `QML` • `Wayland` • `Linux` • `Ephemeris Math` |
+| **🎙️ [`JUST-SAY-IT`](https://github.com/vaishnosingh/JUST-SAY-IT)** | High-accuracy, zero-latency Linux speech-to-text converter engineered for automated voice input and desktop workflow acceleration. | `Python` • `Linux Audio API` • `Speech Processing` |
+| **👁️ [`Face-Sentiment-prediction`](https://github.com/vaishnosingh/Face-Sentiment-prediction)** | Real-time computer vision pipeline for facial landmark extraction and deep learning emotion classification. | `Python` • `OpenCV` • `PyTorch` • `CNN` |
+| **⚡ [`COSMOS`](https://github.com/vaishnosingh/COSMOS)** | Turn legacy hardware into a high-performance Unix workstation through kernel, compositor, and terminal optimization. | `Unix` • `Shell` • `Performance Tuning` |
+
+---
+
+### `// 03 · MODULAR TECHNICAL ARSENAL`
+
+<div align="center">
+  <img src="./assets/skills.svg" alt="Modular Technical Arsenal" width="100%"/>
+</div>
+
+---
+
+### `// 04 · LIVE TELEMETRY & ACTIVITY`
+
+<div align="center">
+
+  <img src="./assets/stats.svg" alt="Live Repository Telemetry & Codebase Distribution" width="100%"/>
+
+  <br/><br/>
+
+  <!-- DYNAMIC CONTRIBUTION SNAKE -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake-dark.svg"/>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg"/>
+    <img alt="Contribution Snake" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake-dark.svg" width="100%"/>
+  </picture>
+
+  <br/><br/>
+
+  <!-- DYNAMIC ACTIVITY GRAPH -->
+  <img src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/activity-graph.svg" alt="Contribution Activity Graph" width="100%"/>
+
+</div>
+
+---
+
+### `// 05 · DIRECT COMMUNICATION CHANNELS`
+
+<div align="center">
+  <a href="mailto:vaishnosingh9@gmail.com">
+    <img src="https://img.shields.io/badge/GMAIL-DIRECT_INBOX-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B0F19" alt="Email"/>
   </a>
-  <a href="https://github.com/vaishnosingh?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB_%2F%2F_REPOSITORIES-090D16?style=for-the-badge&logo=github&logoColor=06B6D4" alt="Repositories" />
+  <a href="https://www.linkedin.com/in/vshnsngh333" target="_blank">
+    <img src="https://img.shields.io/badge/LINKEDIN-NETWORK-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B0F19" alt="LinkedIn"/>
   </a>
-  <a href="mailto:vaishnosingh@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL_%2F%2F_DIRECT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  <a href="https://instagram.com/vshnsngh" target="_blank">
+    <img src="https://img.shields.io/badge/INSTAGRAM-VISUALS-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0B0F19" alt="Instagram"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=TELEMETRY+VIEWS&color=06b6d4&style=for-the-badge" alt="Profile Views" />
-</p>
+  <a href="https://www.codechef.com/users/vshn_sngh" target="_blank">
+    <img src="https://img.shields.io/badge/CODECHEF-COMPETITIVE-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0B0F19" alt="CodeChef"/>
+  </a>
+  <a href="https://www.hackerrank.com/@vaishnosingh9" target="_blank">
+    <img src="https://img.shields.io/badge/HACKERRANK-ALGORITHMS-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black&labelColor=0B0F19" alt="HackerRank"/>
+  </a>
+</div>
 
-<!-- FOOTER -->
-<img src="./assets/footer.svg" width="100%" alt="Footer" />
+<br/>
 
+<div align="center">
+  <img src="./assets/footer.svg" alt="Vaishno Kumar Singh Footer" width="100%"/>
 </div>
