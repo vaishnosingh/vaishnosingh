@@ -1,119 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-label="Developer Metrics &amp; Performance">
-  <title>Developer Metrics &amp; Performance</title>
-  <defs>
-    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0E1322"/>
-      <stop offset="100%" stop-color="#080B12"/>
-    </linearGradient>
-    <linearGradient id="topBevel" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
-      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.3"/>
-      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.4"/>
-    </linearGradient>
-    <linearGradient id="gridGlow" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.4"/>
-    </linearGradient>
-    <radialGradient id="ambientLight" cx="50%" cy="0%" r="70%">
-      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#080B12" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="tileDropShadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%">
+  <rect width="900" height="250" rx="14" fill="#090d16" stroke="#1e293b" stroke-width="1.5"/>
 
-  <!-- Outer Card Frame -->
-  <rect x="0.5" y="0.5" width="999" height="359" rx="18" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-  <rect x="1" y="1" width="998" height="358" rx="17" fill="url(#ambientLight)"/>
-  <!-- 3D Specular Top Rim -->
-  <path d="M 18,1 L 982,1" stroke="url(#topBevel)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Left 2x2 Metric Grid -->
+  <g transform="translate(24, 24)">
+    <rect width="205" height="92" rx="10" fill="#0d131f" stroke="#1e293b"/>
+    <text x="20" y="32" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">PUBLIC REPOSITORIES</text>
+    <text x="20" y="72" fill="#06b6d4" font-family="'Inter', sans-serif" font-size="34" font-weight="800">8</text>
+  </g>
 
+  <g transform="translate(245, 24)">
+    <rect width="205" height="92" rx="10" fill="#0d131f" stroke="#1e293b"/>
+    <text x="20" y="32" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">TOTAL STARS EARNED</text>
+    <text x="20" y="72" fill="#818cf8" font-family="'Inter', sans-serif" font-size="34" font-weight="800">0</text>
+  </g>
+
+  <g transform="translate(24, 132)">
+    <rect width="205" height="92" rx="10" fill="#0d131f" stroke="#1e293b"/>
+    <text x="20" y="32" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">NETWORK FOLLOWERS</text>
+    <text x="20" y="72" fill="#10b981" font-family="'Inter', sans-serif" font-size="34" font-weight="800">0</text>
+  </g>
+
+  <g transform="translate(245, 132)">
+    <rect width="205" height="92" rx="10" fill="#0d131f" stroke="#1e293b"/>
+    <text x="20" y="32" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="11">REPOSITORY FORKS</text>
+    <text x="20" y="72" fill="#f59e0b" font-family="'Inter', sans-serif" font-size="34" font-weight="800">0</text>
+  </g>
+
+  <!-- Right Language Telemetry Bars -->
+  <text x="480" y="42" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">CODEBASE DISTRIBUTION // LIVE TELEMETRY</text>
   
-  <g>
-    
-    <!-- Stat Tile 1 -->
-    <g transform="translate(36, 34)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#06B6D4"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">39</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">TOTAL CONTRIBUTIONS</text>
-    </g>
-    <!-- Stat Tile 2 -->
-    <g transform="translate(272, 34)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#6366F1"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">35</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">COMMITS PUSHED</text>
-    </g>
-    <!-- Stat Tile 3 -->
-    <g transform="translate(508, 34)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#10B981"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">PULL REQUESTS</text>
-    </g>
-    <!-- Stat Tile 4 -->
-    <g transform="translate(744, 34)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#38BDF8"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">ISSUES RESOLVED</text>
-    </g>
-    <!-- Stat Tile 5 -->
-    <g transform="translate(36, 136)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#06B6D4"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">1 days</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">ACTIVE STREAK</text>
-    </g>
-    <!-- Stat Tile 6 -->
-    <g transform="translate(272, 136)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#6366F1"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">2 days</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">LONGEST STREAK</text>
-    </g>
-    <!-- Stat Tile 7 -->
-    <g transform="translate(508, 136)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#F59E0B"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">STARS EARNED</text>
-    </g>
-    <!-- Stat Tile 8 -->
-    <g transform="translate(744, 136)" filter="url(#tileDropShadow)">
-      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
-      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
-      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#10B981"/>
-      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
-      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">COMMUNITY FOLLOWERS</text>
-    </g>
-    
-  <g transform="translate(36, 256)">
-    <text x="0" y="14" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">CORE CODEBASE LANGUAGES</text>
-<rect x="0.0" y="26" width="291.0" height="10" rx="3" fill="#44a51c"/><rect x="293.0" y="26" width="243.1" height="10" rx="3" fill="#e34c26"/><rect x="538.1" y="26" width="159.6" height="10" rx="3" fill="#3178c6"/><rect x="699.6" y="26" width="109.6" height="10" rx="3" fill="#00ADD8"/><rect x="811.3" y="26" width="62.5" height="10" rx="3" fill="#f1e05a"/><rect x="875.8" y="26" width="62.2" height="10" rx="3" fill="#89e051"/>
-      <circle cx="5" cy="52" r="4.5" fill="#44a51c"/>
-      <text x="16" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">QML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">31.4%</tspan></text>
-      <circle cx="315" cy="52" r="4.5" fill="#e34c26"/>
-      <text x="326" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">HTML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">26.2%</tspan></text>
-      <circle cx="625" cy="52" r="4.5" fill="#3178c6"/>
-      <text x="636" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">TypeScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">17.2%</tspan></text>
-      <circle cx="5" cy="74" r="4.5" fill="#00ADD8"/>
-      <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">Go <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">11.8%</tspan></text>
-      <circle cx="315" cy="74" r="4.5" fill="#f1e05a"/>
-      <text x="326" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">JavaScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">6.7%</tspan></text>
-      <circle cx="625" cy="74" r="4.5" fill="#89e051"/>
-      <text x="636" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">Shell <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">6.7%</tspan></text>
-  </g>
-  </g>
-
+        <text x="480" y="75" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12">QML</text>
+        <text x="860" y="75" text-anchor="end" fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">42%</text>
+        <rect x="480" y="83" width="380" height="8" rx="4" fill="#1e293b"/>
+        <rect x="480" y="83" width="151" height="8" rx="4" fill="#06b6d4"/>
+        
+        <text x="480" y="117" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12">TypeScript</text>
+        <text x="860" y="117" text-anchor="end" fill="#6366f1" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">39%</text>
+        <rect x="480" y="125" width="380" height="8" rx="4" fill="#1e293b"/>
+        <rect x="480" y="125" width="140" height="8" rx="4" fill="#6366f1"/>
+        
+        <text x="480" y="159" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12">HTML</text>
+        <text x="860" y="159" text-anchor="end" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">16%</text>
+        <rect x="480" y="167" width="380" height="8" rx="4" fill="#1e293b"/>
+        <rect x="480" y="167" width="57" height="8" rx="4" fill="#10b981"/>
+        
+        <text x="480" y="201" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="12">Python</text>
+        <text x="860" y="201" text-anchor="end" fill="#f59e0b" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">5%</text>
+        <rect x="480" y="209" width="380" height="8" rx="4" fill="#1e293b"/>
+        <rect x="480" y="209" width="18" height="8" rx="4" fill="#f59e0b"/>
+        
+  <text x="860" y="236" text-anchor="end" fill="#475569" font-family="'JetBrains Mono', monospace" font-size="10">Last Synced: 2026-11-17 10:08 UTC</text>
 </svg>
