@@ -1,70 +1,59 @@
 <div align="center">
 
-<!-- HERO 3D SHOWCASE -->
-<a href="https://github.com/vaishnosingh">
-  <img src="./assets/hero.svg" alt="Vaishno Kumar Singh — Software Developer & AI/ML Engineer" width="100%"/>
-</a>
+<!-- HERO TELEMETRY HUD -->
+<img src="./assets/hero.svg" width="100%" alt="Vaishno K Singh - System Architect & Backend Engineer" />
+
+<br/><br/>
+
+<!-- SECTION 01: ABOUT -->
+<img src="./assets/h-about.svg" width="100%" alt="About Section Header" />
+<img src="./assets/about.svg" width="100%" alt="System Telemetry & Architecture Focus" />
+
+<br/><br/>
+
+<!-- SECTION 02: TECH STACK & ORBIT -->
+<img src="./assets/h-stack.svg" width="100%" alt="Tech Stack Header" />
+<img src="./assets/orbit.svg" width="100%" alt="Tech Orbit & Engineering Matrix" />
 
 <br/>
 
-<!-- TOP METRIC BADGES -->
-<img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=PROFILE+VIEWS&style=for-the-badge&color=06B6D4&labelColor=0B0F19" alt="Profile Views"/>
-<a href="https://github.com/vaishnosingh?tab=followers">
-  <img src="https://img.shields.io/github/followers/vaishnosingh?label=FOLLOWERS&style=for-the-badge&logo=github&color=6366F1&labelColor=0B0F19&logoColor=white" alt="Followers"/>
-</a>
-<img src="https://img.shields.io/badge/LOCATION-INDIA%20🇮🇳-10B981?style=for-the-badge&labelColor=0B0F19" alt="Location: India"/>
-<img src="https://img.shields.io/badge/FOCUS-AI%20%26%20SYSTEMS-38BDF8?style=for-the-badge&labelColor=0B0F19" alt="Focus: AI & Systems"/>
+<img src="https://skillicons.dev/icons?i=java,py,ts,nodejs,spring,fastapi,postgres,mongodb,redis,kafka,docker,aws,linux,git,arduino&perline=15&theme=dark" alt="Tech Icons" />
 
 <br/><br/>
 
-<!-- SECTION 01: ABOUT ME -->
-<img src="./assets/h-about.svg" alt="About Me" width="100%"/>
-
-<img src="./assets/about.svg" alt="about.py — Vaishno Kumar Singh Profile Specification" width="100%"/>
-
-<br/><br/>
-
-<!-- SECTION 02: TECH STACK -->
-<img src="./assets/h-stack.svg" alt="Tech Stack" width="100%"/>
-
-<img src="./assets/orbit.svg" alt="Systems and Architectural Technology Matrix" width="100%"/>
-
-<br/><br/>
-
-<!-- SECTION 03: METRICS & ACTIVITY -->
-<img src="./assets/h-stats.svg" alt="Metrics and Activity" width="100%"/>
-
-<img src="./assets/skyline.svg" alt="3D Contribution Architecture Skyline" width="100%"/>
+<!-- SECTION 03: LIVE METRICS & CONTRIBUTION SKYLINE -->
+<img src="./assets/h-stats.svg" width="100%" alt="Live Telemetry Header" />
+<img src="./assets/stats.svg" width="100%" alt="Live GitHub Stats" />
+<img src="./assets/skyline.svg" width="100%" alt="Commit Velocity Skyline" />
 
 <br/>
 
-<img src="./assets/stats.svg" alt="Engineering Metrics and Codebase Distribution" width="100%"/>
-
-<br/><br/>
-
-<!-- CONTRIBUTION SNAKE ANIMATION -->
+<!-- LIVE CONTRIBUTION SNAKE (FROM .github/workflows/snake.yml) -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg"/>
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution Grid Snake" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-contribution-grid-snake-dark.svg" width="100%" />
 </picture>
 
 <br/><br/>
 
 <!-- SECTION 04: CONNECT -->
-<img src="./assets/h-connect.svg" alt="Connect and Network" width="100%"/>
+<img src="./assets/h-connect.svg" width="100%" alt="Connect Header" />
 
 <p align="center">
-  <a href="mailto:vaishnosingh9@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B0F19" alt="Email"/></a>
-  <a href="https://www.linkedin.com/in/vshnsngh333"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0B0F19" alt="LinkedIn"/></a>
-  <a href="https://instagram.com/vshnsngh"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0B0F19" alt="Instagram"/></a>
-  <a href="https://www.codechef.com/users/vshn_sngh"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0B0F19" alt="CodeChef"/></a>
-  <a href="https://www.hackerrank.com/@vaishnosingh9"><img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black&labelColor=0B0F19" alt="HackerRank"/></a>
+  <a href="https://linkedin.com/in/vaishnosingh" target="_blank">
+    <img src="https://img.shields.io/badge/LINKEDIN_%2F%2F_CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/vaishnosingh?tab=repositories" target="_blank">
+    <img src="https://img.shields.io/badge/GITHUB_%2F%2F_REPOSITORIES-090D16?style=for-the-badge&logo=github&logoColor=06B6D4" alt="Repositories" />
+  </a>
+  <a href="mailto:vaishnosingh@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL_%2F%2F_DIRECT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=TELEMETRY+VIEWS&color=06b6d4&style=for-the-badge" alt="Profile Views" />
 </p>
 
-<br/>
-
 <!-- FOOTER -->
-<img src="./assets/footer.svg" alt="Vaishno Kumar Singh Profile Footer" width="100%"/>
+<img src="./assets/footer.svg" width="100%" alt="Footer" />
 
 </div>
