@@ -1,106 +1,332 @@
 #!/usr/bin/env python3
-"""Builds assets/skyline.svg (3D contribution skyline) and assets/stats.svg from live GitHub data.
-Usage: GH_LOGIN=you GH_TOKEN=... python scripts/profile_stats.py      (--placeholder renders empty versions)"""
-import os, sys, json, html, random, urllib.request
-LOGIN=os.environ.get("GH_LOGIN","vaishnosingh"); TOKEN=os.environ.get("GH_TOKEN","")
-OUT=os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","assets")
-SANS="'Segoe UI','Helvetica Neue',Arial,sans-serif"; SERIF="'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif"
-INK,INK2,MARI,RANI,PEA,VIO,IVO,MUT="#07051A","#160F3F","#FFB400","#E8348A","#1FC6B4","#8B5CF6","#F7EEDC","#A79FC9"
-esc=lambda s:html.escape(str(s),quote=False)
-QUERY="""query($login:String!){user(login:$login){followers{totalCount}
-repositories(ownerAffiliations:OWNER,isFork:false,first:100,orderBy:{field:PUSHED_AT,direction:DESC}){nodes{stargazerCount languages(first:8,orderBy:{field:SIZE,direction:DESC}){edges{size node{name color}}}}}
-contributionsCollection{totalCommitContributions totalIssueContributions totalPullRequestContributions
-contributionCalendar{totalContributions weeks{contributionDays{contributionCount weekday}}}}}}"""
+"""
+Generates assets/skyline.svg (3D contribution skyline) and assets/stats.svg from live GitHub data.
+Usage: GH_LOGIN=you GH_TOKEN=... python scripts/profile_stats.py
+"""
+import os, sys, json, html, urllib.request
+
+LOGIN = os.environ.get("GH_LOGIN", "vaishnosingh")
+TOKEN = os.environ.get("GH_TOKEN", "")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "assets")
+
+SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif"
+MONO = "'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace"
+
+# Sleek 3D Slate & Electric Accent Palette
+C_CANVAS = "#0B0F19"
+C_PANEL = "#0F172A"
+C_PANEL_ALT = "#131C31"
+C_BORDER = "#1E293B"
+C_BORDER_LIGHT = "rgba(255, 255, 255, 0.12)"
+C_TEXT_WHITE = "#F8FAFC"
+C_TEXT_MUTED = "#94A3B8"
+C_TEXT_DIM = "#64748B"
+
+# Accents
+C_CYAN = "#06B6D4"
+C_INDIGO = "#6366F1"
+C_EMERALD = "#10B981"
+C_AMBER = "#F59E0B"
+C_SKY = "#38BDF8"
+
+esc = lambda s: html.escape(str(s), quote=False)
+
+def shade(h, f):
+    h = h.lstrip('#')
+    return "#%02x%02x%02x" % tuple(max(0, min(255, int(int(h[i:i+2], 16) * f))) for i in (0, 2, 4))
+
+QUERY = """query($login:String!){
+  user(login:$login){
+    followers{totalCount}
+    repositories(ownerAffiliations:OWNER,isFork:false,first:100,orderBy:{field:PUSHED_AT,direction:DESC}){
+      nodes{
+        stargazerCount
+        languages(first:8,orderBy:{field:SIZE,direction:DESC}){
+          edges{size node{name color}}
+        }
+      }
+    }
+    contributionsCollection{
+      totalCommitContributions
+      totalIssueContributions
+      totalPullRequestContributions
+      contributionCalendar{
+        totalContributions
+        weeks{contributionDays{contributionCount weekday}}
+      }
+    }
+  }
+}"""
 
 def fetch():
-    req=urllib.request.Request("https://api.github.com/graphql",data=json.dumps({"query":QUERY,"variables":{"login":LOGIN}}).encode(),
-        headers={"Authorization":"bearer "+TOKEN,"Content-Type":"application/json","User-Agent":"profile-stats"})
-    d=json.load(urllib.request.urlopen(req,timeout=30))
-    if d.get("errors"): sys.exit(json.dumps(d["errors"]))
-    return d["data"]["user"]
+    if not TOKEN:
+        return None
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": QUERY, "variables": {"login": LOGIN}}).encode(),
+        headers={
+            "Authorization": f"bearer {TOKEN}",
+            "Content-Type": "application/json",
+            "User-Agent": "profile-stats"
+        }
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.load(resp)
+            if data.get("errors"):
+                print("GraphQL Errors:", data["errors"], file=sys.stderr)
+                return None
+            return data["data"]["user"]
+    except Exception as e:
+        print(f"Fetch error: {e}", file=sys.stderr)
+        return None
 
 def digest(u):
-    cc=u["contributionsCollection"];cal=cc["contributionCalendar"]
-    days=[(wi,d["weekday"],d["contributionCount"]) for wi,w in enumerate(cal["weeks"]) for d in w["contributionDays"]]
-    seq=[c for _,_,c in days];longest=run=0
-    for c in seq: run=run+1 if c>0 else 0;longest=max(longest,run)
-    rev=seq[::-1];i=1 if rev and rev[0]==0 else 0;cur=0
-    while i<len(rev) and rev[i]>0: cur+=1;i+=1
-    langs={}
+    if not u:
+        return None
+    cc = u["contributionsCollection"]
+    cal = cc["contributionCalendar"]
+    days = [(wi, d["weekday"], d["contributionCount"]) for wi, w in enumerate(cal["weeks"]) for d in w["contributionDays"]]
+    seq = [c for _, _, c in days]
+    longest = run = 0
+    for c in seq:
+        run = run + 1 if c > 0 else 0
+        longest = max(longest, run)
+    rev = seq[::-1]
+    i = 1 if rev and rev[0] == 0 else 0
+    cur = 0
+    while i < len(rev) and rev[i] > 0:
+        cur += 1
+        i += 1
+    langs = {}
     for r in u["repositories"]["nodes"]:
         for e in r["languages"]["edges"]:
-            n=e["node"];l=langs.setdefault(n["name"],[0,n["color"] or "#8B8B8B"]);l[0]+=e["size"]
-    return dict(days=days,total=cal["totalContributions"],cur=cur,longest=longest,commits=cc["totalCommitContributions"],prs=cc["totalPullRequestContributions"],
-        issues=cc["totalIssueContributions"],stars=sum(r["stargazerCount"] for r in u["repositories"]["nodes"]),followers=u["followers"]["totalCount"],langs=langs)
+            n = e["node"]
+            l = langs.setdefault(n["name"], [0, n["color"] or "#64748B"])
+            l[0] += e["size"]
+    return {
+        "days": days,
+        "total": cal["totalContributions"],
+        "cur": cur,
+        "longest": longest,
+        "commits": cc["totalCommitContributions"],
+        "prs": cc["totalPullRequestContributions"],
+        "issues": cc["totalIssueContributions"],
+        "stars": sum(r["stargazerCount"] for r in u["repositories"]["nodes"]),
+        "followers": u["followers"]["totalCount"],
+        "langs": langs
+    }
 
-def shade(h,f): return "#%02x%02x%02x"%tuple(int(int(h[i:i+2],16)*f) for i in (1,3,5))
-def stars(seed):
-    r=random.Random(seed);o="".join(f'<circle cx="{r.uniform(0,1000):.0f}" cy="{r.uniform(0,H_MAX):.0f}" r="{r.uniform(.5,1.5):.1f}" fill="#fff" fill-opacity="{r.uniform(.2,.8):.2f}"/>' for _ in range(90))
-    return f'<g style="animation:dr 140s linear infinite"><g id="sf">{o}</g><use xlink:href="#sf" x="-1000"/></g>'
-H_MAX=460
-CSS=f"""@keyframes dr{{to{{transform:translateX(1000px)}}}}@keyframes rise{{from{{transform:scaleY(0)}}}}@keyframes fade{{from{{opacity:0;transform:translateY(14px)}}}}
-.rise{{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}}.tile{{animation:fade .8s cubic-bezier(.2,.8,.2,1) both}}
-.num{{font:700 34px {SERIF};fill:{IVO}}}.lab{{font:13px {SANS};fill:{MUT}}}.ttl{{font:700 26px {SERIF};fill:{IVO}}}.sub{{font:14px {SANS};fill:{MUT}}}
-@media (prefers-reduced-motion:reduce){{*{{animation:none!important}}}}"""
-def wrap(W,H,aria,body):
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{esc(aria)}"><title>{esc(aria)}</title>'
-      f'<defs><style>{CSS}</style><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{INK}"/><stop offset="1" stop-color="{INK2}"/></linearGradient>'
-      f'<linearGradient id="bd" x1="0" x2="1"><stop offset="0" stop-color="{MARI}"/><stop offset=".6" stop-color="{RANI}"/><stop offset="1" stop-color="{PEA}"/></linearGradient>'
-      f'<radialGradient id="gw"><stop offset="0" stop-color="{RANI}" stop-opacity=".35"/><stop offset="1" stop-color="{RANI}" stop-opacity="0"/></radialGradient>'
-      f'<clipPath id="c"><rect width="{W}" height="{H}" rx="24"/></clipPath></defs><g clip-path="url(#c)"><rect width="{W}" height="{H}" fill="url(#bg)"/>{stars(W+H)}{body}</g>'
-      f'<rect x=".75" y=".75" width="{W-1.5}" height="{H-1.5}" rx="24" fill="none" stroke="url(#bd)" stroke-opacity=".5" stroke-width="1.5"/></svg>')
+def wrap_svg(W, H, title, content):
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{esc(title)}">
+  <title>{esc(title)}</title>
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1322"/>
+      <stop offset="100%" stop-color="#080B12"/>
+    </linearGradient>
+    <linearGradient id="topBevel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="gridGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="ambientLight" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#080B12" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tileDropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
 
-LV=[("#2A2060",),(PEA,),(VIO,),(RANI,),(MARI,)]
+  <!-- Outer Card Frame -->
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="18" fill="url(#cardBg)" stroke="{C_BORDER}" stroke-width="1"/>
+  <rect x="1" y="1" width="{W-2}" height="{H-2}" rx="17" fill="url(#ambientLight)"/>
+  <!-- 3D Specular Top Rim -->
+  <path d="M 18,1 L {W-18},1" stroke="url(#topBevel)" stroke-width="1.5" stroke-linecap="round"/>
+
+  {content}
+</svg>"""
+
+LV_COLORS = ["#172033", "#0284C7", "#06B6D4", "#6366F1", "#A855F7"]
+
 def skyline(D):
-    W,H=1000,470;ux,uy,vx,vy=15,2.8,7.5,-9;ox,oy=76,292
-    P=lambda w,d:(ox+w*ux+d*vx,oy+w*uy+d*vy)
-    pt=lambda p:f"{p[0]:.1f},{p[1]:.1f}"
-    days=D["days"] if D else [(w,d,0) for w in range(53) for d in range(7)]
-    m=max([c for _,_,c in days]+[1]);out=""
-    plate=lambda a,b,dy=0:[P(a,b),P(53.4,b),P(53.4,7.4),P(a,7.4)]
-    c=[P(-.4,-.4),P(53.4,-.4),P(53.4,7.4),P(-.4,7.4)];t=10
-    out+=f'<polygon points="{pt(c[3])} {pt(c[2])} {pt((c[2][0],c[2][1]+t))} {pt((c[3][0],c[3][1]+t))}" fill="#0C0830"/>'
-    out+=f'<polygon points="{pt(c[0])} {pt(c[3])} {pt((c[3][0],c[3][1]+t))} {pt((c[0][0],c[0][1]+t))}" fill="#0E0A38"/>'
-    out+=f'<polygon points="{pt(c[1])} {pt(c[2])} {pt((c[2][0],c[2][1]+t))} {pt((c[1][0],c[1][1]+t))}" fill="#090626"/>'
-    out+=f'<polygon points="{" ".join(pt(p) for p in c)}" fill="#1A1250" stroke="#3B2A8C"/>'
-    for w,d,n in sorted(days,key=lambda x:(-x[1],x[0])):
-        lv=0 if n==0 else min(4,max(1,-(-n*4//m)));col=LV[lv][0];h=2 if n==0 else 6+(n/m)**.7*125
-        a,b,cc,dd=P(w+.12,d+.12),P(w+.88,d+.12),P(w+.88,d+.88),P(w+.12,d+.88);up=lambda p:(p[0],p[1]-h)
-        g=(f'<polygon points="{pt(up(a))} {pt(up(b))} {pt(up(cc))} {pt(up(dd))}" fill="{shade(col,1.0) if n else col}"/>'
-           f'<polygon points="{pt(a)} {pt(b)} {pt(up(b))} {pt(up(a))}" fill="{shade(col,.72)}"/>'
-           f'<polygon points="{pt(b)} {pt(cc)} {pt(up(cc))} {pt(up(b))}" fill="{shade(col,.5)}"/>')
-        if n:
-            bx,by=P(w+.5,d+.5);out+=f'<g class="rise" style="transform-origin:{bx:.1f}px {by:.1f}px;animation-delay:{w*.03:.2f}s">{g}</g>'
-        else: out+=g
-    tot=f'{D["total"]:,}' if D else "—"
-    head=f'<ellipse cx="500" cy="420" rx="520" ry="90" fill="url(#gw)"/><text class="ttl" x="40" y="54">Contribution skyline</text><text class="sub" x="40" y="78">{tot} contributions in the last year</text>'
-    return wrap(W,H,"3D contribution skyline for the last year",head+out)
+    W, H = 1000, 470
+    # Isometric grid projection vectors
+    ux, uy = 15.2, 2.7
+    vx, vy = 7.4, -9.0
+    ox, oy = 76, 296
+
+    P = lambda w, d: (ox + w * ux + d * vx, oy + w * uy + d * vy)
+    pt = lambda p: f"{p[0]:.1f},{p[1]:.1f}"
+
+    days = D["days"] if D else [(w, d, 0) for w in range(53) for d in range(7)]
+    m = max([c for _, _, c in days] + [1])
+
+    # 3D Base Plate
+    t = 12
+    c = [P(-0.5, -0.5), P(53.5, -0.5), P(53.5, 7.5), P(-0.5, 7.5)]
+    plate = ""
+    # Side walls of the 3D base plate
+    plate += f'<polygon points="{pt(c[3])} {pt(c[2])} {pt((c[2][0], c[2][1]+t))} {pt((c[3][0], c[3][1]+t))}" fill="#0A0F1D" stroke="#1E293B" stroke-width="0.5"/>'
+    plate += f'<polygon points="{pt(c[0])} {pt(c[3])} {pt((c[3][0], c[3][1]+t))} {pt((c[0][0], c[0][1]+t))}" fill="#0F172A" stroke="#1E293B" stroke-width="0.5"/>'
+    plate += f'<polygon points="{pt(c[1])} {pt(c[2])} {pt((c[2][0], c[2][1]+t))} {pt((c[1][0], c[1][1]+t))}" fill="#080C17" stroke="#1E293B" stroke-width="0.5"/>'
+    # Top surface of the 3D base plate
+    plate += f'<polygon points="{" ".join(pt(p) for p in c)}" fill="#11192C" stroke="#1E293B" stroke-width="1"/>'
+
+    # Draw isometric grid accent lines
+    grid_lines = ""
+    for w_step in range(0, 54, 8):
+        p1 = P(w_step, -0.5)
+        p2 = P(w_step, 7.5)
+        grid_lines += f'<line x1="{p1[0]:.1f}" y1="{p1[1]:.1f}" x2="{p2[0]:.1f}" y2="{p2[1]:.1f}" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>'
+
+    # Render columns sorted back-to-front for proper isometric overlap
+    bars = ""
+    for w, d, n in sorted(days, key=lambda x: (-x[1], x[0])):
+        if n == 0:
+            lv = 0
+            col = LV_COLORS[0]
+            h = 2.5
+        else:
+            lv = min(4, max(1, 1 + int((n / m) * 3.99)))
+            col = LV_COLORS[lv]
+            h = 6 + (n / m)**0.72 * 125
+
+        a, b, cc, dd = P(w + 0.12, d + 0.12), P(w + 0.88, d + 0.12), P(w + 0.88, d + 0.88), P(w + 0.12, d + 0.88)
+        up = lambda p: (p[0], p[1] - h)
+
+        # 3D block faces: Top, Front, Right
+        top_face = f'<polygon points="{pt(up(a))} {pt(up(b))} {pt(up(cc))} {pt(up(dd))}" fill="{col}"/>'
+        front_face = f'<polygon points="{pt(a)} {pt(b)} {pt(up(b))} {pt(up(a))}" fill="{shade(col, 0.72)}"/>'
+        side_face = f'<polygon points="{pt(b)} {pt(cc)} {pt(up(cc))} {pt(up(b))}" fill="{shade(col, 0.50)}"/>'
+
+        bars += top_face + front_face + side_face
+
+    tot = f'{D["total"]:,}' if D else "—"
+
+    # Header & Meta elements
+    header = f"""
+  <!-- Header Info -->
+  <g transform="translate(36, 32)">
+    <rect x="0" y="0" width="168" height="24" rx="12" fill="#1E293B" fill-opacity="0.6" stroke="#334155" stroke-width="0.8"/>
+    <circle cx="12" cy="12" r="4" fill="#10B981"/>
+    <text x="24" y="16" font-family="{MONO}" font-size="10" font-weight="600" fill="#E2E8F0" letter-spacing="0.5">3D CONTRIBUTION GRID</text>
+    
+    <text x="0" y="54" font-family="{SANS}" font-size="24" font-weight="800" fill="{C_TEXT_WHITE}" letter-spacing="-0.5">Annual Engineering Activity</text>
+    <text x="0" y="76" font-family="{SANS}" font-size="13" font-weight="400" fill="{C_TEXT_MUTED}"><tspan font-weight="600" fill="{C_CYAN}">{tot}</tspan> verified contributions across git repositories in the last year</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(730, 44)">
+    <text x="0" y="14" font-family="{SANS}" font-size="11" fill="{C_TEXT_DIM}" font-weight="500">Less</text>
+    <rect x="32" y="4" width="12" height="12" rx="3" fill="{LV_COLORS[0]}" stroke="#334155" stroke-width="0.5"/>
+    <rect x="50" y="4" width="12" height="12" rx="3" fill="{LV_COLORS[1]}"/>
+    <rect x="68" y="4" width="12" height="12" rx="3" fill="{LV_COLORS[2]}"/>
+    <rect x="86" y="4" width="12" height="12" rx="3" fill="{LV_COLORS[3]}"/>
+    <rect x="104" y="4" width="12" height="12" rx="3" fill="{LV_COLORS[4]}"/>
+    <text x="124" y="14" font-family="{SANS}" font-size="11" fill="{C_TEXT_DIM}" font-weight="500">More</text>
+  </g>
+"""
+    content = header + f'<g>{plate}{grid_lines}{bars}</g>'
+    return wrap_svg(W, H, "3D Contribution Skyline", content)
 
 def stats(D):
-    W,H=1000,350
-    f=lambda k:f'{D[k]:,}' if D else "—"
-    T=[("Contributions, 1 year","total",MARI),("Commits","commits",RANI),("Pull requests","prs",PEA),("Issues","issues",VIO),
-       ("Current streak","cur",MARI),("Longest streak, 1 year","longest",RANI),("Stars earned","stars",PEA),("Followers","followers",VIO)]
-    out=""
-    for i,(lab,k,col) in enumerate(T):
-        x=20+(i%4)*246;y=26+(i//4)*104
-        out+=(f'<g transform="translate({x} {y})"><g class="tile" style="animation-delay:{i*.08:.2f}s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/>'
-              f'<rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="{col}"/>'
-              f'<text class="num" x="22" y="54">{f(k)}</text><text class="lab" x="22" y="76">{esc(lab)}</text></g></g>')
-    out+=f'<text class="ttl" x="40" y="258" style="font-size:20px">Top languages</text>'
-    L=sorted(D["langs"].items(),key=lambda kv:-kv[1][0])[:6] if D else []
-    tot=sum(v[0] for _,v in L) or 1;x=40
-    if L:
-        for n,(s,col) in L:
-            w=944*s/tot-3;out+=f'<rect x="{x:.1f}" y="270" width="{max(w,2):.1f}" height="12" rx="6" fill="{col}"/>';x+=w+3
-        for i,(n,(s,col)) in enumerate(L):
-            lx=40+(i%3)*316;ly=312+(i//3)*24
-            out+=f'<circle cx="{lx+6}" cy="{ly-4}" r="5" fill="{col}"/><text class="lab" x="{lx+20}" y="{ly}" style="fill:{IVO}">{esc(n)} <tspan style="fill:{MUT}">{100*s/tot:.1f}%</tspan></text>'
-    else: out+=f'<rect x="40" y="270" width="944" height="12" rx="6" fill="#2A2060"/><text class="lab" x="40" y="312">Waiting for the first workflow run</text>'
-    return wrap(W,H,"GitHub stats",out)
+    W, H = 1000, 360
+    f = lambda k: f'{D[k]:,}' if D else "—"
 
-if __name__=="__main__":
-    D=None if "--placeholder" in sys.argv else digest(fetch())
-    os.makedirs(OUT,exist_ok=True)
-    open(os.path.join(OUT,"skyline.svg"),"w",encoding="utf-8").write(skyline(D));open(os.path.join(OUT,"stats.svg"),"w",encoding="utf-8").write(stats(D))
-    print("wrote assets/skyline.svg and assets/stats.svg")
+    # 8 Key Performance Indicators
+    metrics = [
+        ("TOTAL CONTRIBUTIONS", "total", C_CYAN),
+        ("COMMITS PUSHED", "commits", C_INDIGO),
+        ("PULL REQUESTS", "prs", C_EMERALD),
+        ("ISSUES RESOLVED", "issues", C_SKY),
+        ("ACTIVE STREAK", "cur", C_CYAN),
+        ("LONGEST STREAK", "longest", C_INDIGO),
+        ("STARS EARNED", "stars", C_AMBER),
+        ("COMMUNITY FOLLOWERS", "followers", C_EMERALD)
+    ]
+
+    tiles = ""
+    for i, (label, key, col) in enumerate(metrics):
+        col_idx = i % 4
+        row_idx = i // 4
+        x = 36 + col_idx * 236
+        y = 34 + row_idx * 102
+
+        unit = " days" if "STREAK" in label and D and D[key] > 0 else ""
+        val = f(key) + unit
+
+        tiles += f"""
+    <!-- Stat Tile {i+1} -->
+    <g transform="translate({x}, {y})" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="{col}"/>
+      <text x="18" y="48" font-family="{SANS}" font-size="28" font-weight="800" fill="{C_TEXT_WHITE}" letter-spacing="-0.5">{val}</text>
+      <text x="18" y="70" font-family="{MONO}" font-size="10.5" font-weight="600" fill="{C_TEXT_MUTED}" letter-spacing="0.5">{label}</text>
+    </g>"""
+
+    # Languages Bar Section
+    lang_section = f"""
+  <g transform="translate(36, 256)">
+    <text x="0" y="14" font-family="{MONO}" font-size="11" font-weight="600" fill="{C_TEXT_MUTED}" letter-spacing="1">CORE CODEBASE LANGUAGES</text>
+"""
+
+    langs = sorted(D["langs"].items(), key=lambda kv: -kv[1][0])[:6] if D else []
+    total_size = sum(v[0] for _, v in langs) or 1
+
+    bar_width = 928
+    bar_height = 10
+    bar_elements = ""
+    legend_elements = ""
+
+    if langs:
+        cur_x = 0
+        for name, (size, color) in langs:
+            segment_w = (size / total_size) * bar_width
+            if segment_w < 3:
+                segment_w = 3
+            bar_elements += f'<rect x="{cur_x:.1f}" y="26" width="{segment_w:.1f}" height="{bar_height}" rx="3" fill="{color}"/>'
+            cur_x += segment_w + 2
+
+        for i, (name, (size, color)) in enumerate(langs):
+            pct = (size / total_size) * 100
+            leg_x = (i % 3) * 310
+            leg_y = 56 + (i // 3) * 22
+            legend_elements += f"""
+      <circle cx="{leg_x + 5}" cy="{leg_y - 4}" r="4.5" fill="{color}"/>
+      <text x="{leg_x + 16}" y="{leg_y}" font-family="{SANS}" font-size="12" font-weight="500" fill="{C_TEXT_WHITE}">{esc(name)} <tspan font-family="{MONO}" font-size="11" fill="{C_TEXT_DIM}">{pct:.1f}%</tspan></text>"""
+    else:
+        bar_elements = f'<rect x="0" y="26" width="{bar_width}" height="{bar_height}" rx="5" fill="#1E293B"/>'
+        legend_elements = f'<text x="0" y="56" font-family="{SANS}" font-size="12" fill="{C_TEXT_MUTED}">Analyzing repository code distribution...</text>'
+
+    lang_section += bar_elements + legend_elements + "\n  </g>"
+
+    content = f"""
+  <g>
+    {tiles}
+    {lang_section}
+  </g>
+"""
+    return wrap_svg(W, H, "Developer Metrics & Performance", content)
+
+if __name__ == "__main__":
+    data_user = fetch()
+    D = digest(data_user)
+    os.makedirs(OUT, exist_ok=True)
+    
+    sky_svg = skyline(D)
+    stats_svg = stats(D)
+    
+    with open(os.path.join(OUT, "skyline.svg"), "w", encoding="utf-8") as f:
+        f.write(sky_svg)
+    with open(os.path.join(OUT, "stats.svg"), "w", encoding="utf-8") as f:
+        f.write(stats_svg)
+        
+    print("Successfully generated assets/skyline.svg and assets/stats.svg")

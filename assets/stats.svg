@@ -1,4 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 350" width="1000" height="350" role="img" aria-label="GitHub stats"><title>GitHub stats</title><defs><style>@keyframes dr{to{transform:translateX(1000px)}}@keyframes rise{from{transform:scaleY(0)}}@keyframes fade{from{opacity:0;transform:translateY(14px)}}
-.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}.tile{animation:fade .8s cubic-bezier(.2,.8,.2,1) both}
-.num{font:700 34px 'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif;fill:#F7EEDC}.lab{font:13px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#A79FC9}.ttl{font:700 26px 'Iowan Old Style','Palatino Linotype','Book Antiqua',Georgia,serif;fill:#F7EEDC}.sub{font:14px 'Segoe UI','Helvetica Neue',Arial,sans-serif;fill:#A79FC9}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}}</style><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07051A"/><stop offset="1" stop-color="#160F3F"/></linearGradient><linearGradient id="bd" x1="0" x2="1"><stop offset="0" stop-color="#FFB400"/><stop offset=".6" stop-color="#E8348A"/><stop offset="1" stop-color="#1FC6B4"/></linearGradient><radialGradient id="gw"><stop offset="0" stop-color="#E8348A" stop-opacity=".35"/><stop offset="1" stop-color="#E8348A" stop-opacity="0"/></radialGradient><clipPath id="c"><rect width="1000" height="350" rx="24"/></clipPath></defs><g clip-path="url(#c)"><rect width="1000" height="350" fill="url(#bg)"/><g style="animation:dr 140s linear infinite"><g id="sf"><circle cx="491" cy="8" r="1.0" fill="#fff" fill-opacity="0.34"/><circle cx="581" cy="291" r="1.0" fill="#fff" fill-opacity="0.64"/><circle cx="220" cy="352" r="1.1" fill="#fff" fill-opacity="0.20"/><circle cx="639" cy="145" r="1.2" fill="#fff" fill-opacity="0.26"/><circle cx="252" cy="398" r="1.0" fill="#fff" fill-opacity="0.78"/><circle cx="16" cy="293" r="0.7" fill="#fff" fill-opacity="0.64"/><circle cx="572" cy="93" r="0.6" fill="#fff" fill-opacity="0.80"/><circle cx="188" cy="88" r="1.1" fill="#fff" fill-opacity="0.24"/><circle cx="659" cy="301" r="0.8" fill="#fff" fill-opacity="0.69"/><circle cx="56" cy="254" r="1.0" fill="#fff" fill-opacity="0.78"/><circle cx="659" cy="48" r="0.8" fill="#fff" fill-opacity="0.44"/><circle cx="50" cy="365" r="1.0" fill="#fff" fill-opacity="0.63"/><circle cx="497" cy="392" r="0.9" fill="#fff" fill-opacity="0.53"/><circle cx="914" cy="383" r="0.6" fill="#fff" fill-opacity="0.61"/><circle cx="822" cy="374" r="1.0" fill="#fff" fill-opacity="0.76"/><circle cx="636" cy="229" r="1.2" fill="#fff" fill-opacity="0.79"/><circle cx="112" cy="180" r="1.4" fill="#fff" fill-opacity="0.68"/><circle cx="222" cy="282" r="0.8" fill="#fff" fill-opacity="0.36"/><circle cx="839" cy="144" r="1.0" fill="#fff" fill-opacity="0.66"/><circle cx="922" cy="276" r="1.0" fill="#fff" fill-opacity="0.39"/><circle cx="210" cy="304" r="0.9" fill="#fff" fill-opacity="0.50"/><circle cx="954" cy="108" r="1.0" fill="#fff" fill-opacity="0.54"/><circle cx="785" cy="83" r="1.2" fill="#fff" fill-opacity="0.53"/><circle cx="965" cy="403" r="0.5" fill="#fff" fill-opacity="0.40"/><circle cx="585" cy="219" r="1.1" fill="#fff" fill-opacity="0.24"/><circle cx="274" cy="30" r="0.6" fill="#fff" fill-opacity="0.23"/><circle cx="392" cy="121" r="1.5" fill="#fff" fill-opacity="0.62"/><circle cx="903" cy="118" r="1.4" fill="#fff" fill-opacity="0.45"/><circle cx="812" cy="379" r="1.2" fill="#fff" fill-opacity="0.75"/><circle cx="662" cy="335" r="1.0" fill="#fff" fill-opacity="0.49"/><circle cx="4" cy="417" r="0.6" fill="#fff" fill-opacity="0.37"/><circle cx="247" cy="221" r="0.8" fill="#fff" fill-opacity="0.42"/><circle cx="787" cy="281" r="1.1" fill="#fff" fill-opacity="0.46"/><circle cx="879" cy="137" r="1.0" fill="#fff" fill-opacity="0.36"/><circle cx="595" cy="109" r="0.7" fill="#fff" fill-opacity="0.47"/><circle cx="312" cy="251" r="1.4" fill="#fff" fill-opacity="0.35"/><circle cx="507" cy="378" r="1.3" fill="#fff" fill-opacity="0.64"/><circle cx="499" cy="110" r="0.8" fill="#fff" fill-opacity="0.25"/><circle cx="641" cy="107" r="0.9" fill="#fff" fill-opacity="0.57"/><circle cx="32" cy="417" r="1.0" fill="#fff" fill-opacity="0.76"/><circle cx="621" cy="288" r="0.7" fill="#fff" fill-opacity="0.34"/><circle cx="319" cy="345" r="0.9" fill="#fff" fill-opacity="0.36"/><circle cx="601" cy="431" r="1.2" fill="#fff" fill-opacity="0.58"/><circle cx="320" cy="94" r="0.7" fill="#fff" fill-opacity="0.75"/><circle cx="112" cy="445" r="0.7" fill="#fff" fill-opacity="0.70"/><circle cx="576" cy="289" r="0.7" fill="#fff" fill-opacity="0.74"/><circle cx="290" cy="417" r="1.1" fill="#fff" fill-opacity="0.67"/><circle cx="905" cy="273" r="1.4" fill="#fff" fill-opacity="0.74"/><circle cx="330" cy="405" r="0.9" fill="#fff" fill-opacity="0.24"/><circle cx="996" cy="216" r="0.6" fill="#fff" fill-opacity="0.68"/><circle cx="330" cy="361" r="1.1" fill="#fff" fill-opacity="0.25"/><circle cx="77" cy="251" r="1.1" fill="#fff" fill-opacity="0.60"/><circle cx="395" cy="74" r="1.4" fill="#fff" fill-opacity="0.25"/><circle cx="288" cy="369" r="1.1" fill="#fff" fill-opacity="0.72"/><circle cx="802" cy="100" r="1.2" fill="#fff" fill-opacity="0.66"/><circle cx="838" cy="349" r="0.6" fill="#fff" fill-opacity="0.44"/><circle cx="232" cy="110" r="1.3" fill="#fff" fill-opacity="0.79"/><circle cx="539" cy="39" r="1.4" fill="#fff" fill-opacity="0.56"/><circle cx="7" cy="427" r="1.0" fill="#fff" fill-opacity="0.25"/><circle cx="565" cy="235" r="0.9" fill="#fff" fill-opacity="0.21"/><circle cx="554" cy="253" r="0.6" fill="#fff" fill-opacity="0.29"/><circle cx="50" cy="448" r="0.8" fill="#fff" fill-opacity="0.24"/><circle cx="372" cy="420" r="1.2" fill="#fff" fill-opacity="0.45"/><circle cx="661" cy="11" r="0.6" fill="#fff" fill-opacity="0.22"/><circle cx="268" cy="298" r="1.2" fill="#fff" fill-opacity="0.28"/><circle cx="874" cy="236" r="0.8" fill="#fff" fill-opacity="0.31"/><circle cx="633" cy="457" r="1.2" fill="#fff" fill-opacity="0.43"/><circle cx="457" cy="380" r="1.2" fill="#fff" fill-opacity="0.64"/><circle cx="605" cy="361" r="0.9" fill="#fff" fill-opacity="0.65"/><circle cx="357" cy="444" r="1.1" fill="#fff" fill-opacity="0.76"/><circle cx="523" cy="297" r="1.4" fill="#fff" fill-opacity="0.56"/><circle cx="499" cy="246" r="1.4" fill="#fff" fill-opacity="0.59"/><circle cx="757" cy="57" r="1.1" fill="#fff" fill-opacity="0.22"/><circle cx="233" cy="134" r="1.2" fill="#fff" fill-opacity="0.23"/><circle cx="792" cy="237" r="0.9" fill="#fff" fill-opacity="0.60"/><circle cx="444" cy="188" r="1.1" fill="#fff" fill-opacity="0.75"/><circle cx="741" cy="303" r="1.1" fill="#fff" fill-opacity="0.63"/><circle cx="180" cy="6" r="1.4" fill="#fff" fill-opacity="0.57"/><circle cx="15" cy="121" r="1.5" fill="#fff" fill-opacity="0.47"/><circle cx="244" cy="366" r="1.1" fill="#fff" fill-opacity="0.52"/><circle cx="639" cy="12" r="0.7" fill="#fff" fill-opacity="0.34"/><circle cx="830" cy="46" r="0.7" fill="#fff" fill-opacity="0.53"/><circle cx="336" cy="137" r="1.2" fill="#fff" fill-opacity="0.42"/><circle cx="190" cy="338" r="0.6" fill="#fff" fill-opacity="0.49"/><circle cx="218" cy="363" r="1.3" fill="#fff" fill-opacity="0.56"/><circle cx="210" cy="122" r="0.7" fill="#fff" fill-opacity="0.69"/><circle cx="677" cy="388" r="1.2" fill="#fff" fill-opacity="0.72"/><circle cx="443" cy="296" r="0.6" fill="#fff" fill-opacity="0.40"/><circle cx="458" cy="381" r="1.4" fill="#fff" fill-opacity="0.60"/><circle cx="365" cy="421" r="0.5" fill="#fff" fill-opacity="0.65"/></g><use xlink:href="#sf" x="-1000"/></g><g transform="translate(20 26)"><g class="tile" style="animation-delay:0.00s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#FFB400"/><text class="num" x="22" y="54">37</text><text class="lab" x="22" y="76">Contributions, 1 year</text></g></g><g transform="translate(266 26)"><g class="tile" style="animation-delay:0.08s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#E8348A"/><text class="num" x="22" y="54">33</text><text class="lab" x="22" y="76">Commits</text></g></g><g transform="translate(512 26)"><g class="tile" style="animation-delay:0.16s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#1FC6B4"/><text class="num" x="22" y="54">0</text><text class="lab" x="22" y="76">Pull requests</text></g></g><g transform="translate(758 26)"><g class="tile" style="animation-delay:0.24s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#8B5CF6"/><text class="num" x="22" y="54">0</text><text class="lab" x="22" y="76">Issues</text></g></g><g transform="translate(20 130)"><g class="tile" style="animation-delay:0.32s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#FFB400"/><text class="num" x="22" y="54">1</text><text class="lab" x="22" y="76">Current streak</text></g></g><g transform="translate(266 130)"><g class="tile" style="animation-delay:0.40s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#E8348A"/><text class="num" x="22" y="54">2</text><text class="lab" x="22" y="76">Longest streak, 1 year</text></g></g><g transform="translate(512 130)"><g class="tile" style="animation-delay:0.48s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#1FC6B4"/><text class="num" x="22" y="54">0</text><text class="lab" x="22" y="76">Stars earned</text></g></g><g transform="translate(758 130)"><g class="tile" style="animation-delay:0.56s"><rect x="6" y="6" width="222" height="88" rx="14" fill="#04030F" fill-opacity=".7"/><rect width="222" height="88" rx="14" fill="#150F3A" stroke="#3A2A8A"/><rect x="0" y="22" width="4" height="30" rx="2" fill="#8B5CF6"/><text class="num" x="22" y="54">0</text><text class="lab" x="22" y="76">Followers</text></g></g><text class="ttl" x="40" y="258" style="font-size:20px">Top languages</text><rect x="40.0" y="270" width="293.0" height="12" rx="6" fill="#44a51c"/><rect x="336.0" y="270" width="244.3" height="12" rx="6" fill="#e34c26"/><rect x="583.3" y="270" width="159.3" height="12" rx="6" fill="#3178c6"/><rect x="745.6" y="270" width="108.5" height="12" rx="6" fill="#00ADD8"/><rect x="857.1" y="270" width="60.6" height="12" rx="6" fill="#f1e05a"/><rect x="920.8" y="270" width="60.2" height="12" rx="6" fill="#89e051"/><circle cx="46" cy="308" r="5" fill="#44a51c"/><text class="lab" x="60" y="312" style="fill:#F7EEDC">QML <tspan style="fill:#A79FC9">31.4%</tspan></text><circle cx="362" cy="308" r="5" fill="#e34c26"/><text class="lab" x="376" y="312" style="fill:#F7EEDC">HTML <tspan style="fill:#A79FC9">26.2%</tspan></text><circle cx="678" cy="308" r="5" fill="#3178c6"/><text class="lab" x="692" y="312" style="fill:#F7EEDC">TypeScript <tspan style="fill:#A79FC9">17.2%</tspan></text><circle cx="46" cy="332" r="5" fill="#00ADD8"/><text class="lab" x="60" y="336" style="fill:#F7EEDC">Go <tspan style="fill:#A79FC9">11.8%</tspan></text><circle cx="362" cy="332" r="5" fill="#f1e05a"/><text class="lab" x="376" y="336" style="fill:#F7EEDC">JavaScript <tspan style="fill:#A79FC9">6.7%</tspan></text><circle cx="678" cy="332" r="5" fill="#89e051"/><text class="lab" x="692" y="336" style="fill:#F7EEDC">Shell <tspan style="fill:#A79FC9">6.7%</tspan></text></g><rect x=".75" y=".75" width="998.5" height="348.5" rx="24" fill="none" stroke="url(#bd)" stroke-opacity=".5" stroke-width="1.5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="1000" height="360" role="img" aria-label="Developer Metrics &amp; Performance">
+  <title>Developer Metrics &amp; Performance</title>
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E1322"/>
+      <stop offset="100%" stop-color="#080B12"/>
+    </linearGradient>
+    <linearGradient id="topBevel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#818CF8" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#6366F1" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="gridGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="ambientLight" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#080B12" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tileDropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect x="0.5" y="0.5" width="999" height="359" rx="18" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
+  <rect x="1" y="1" width="998" height="358" rx="17" fill="url(#ambientLight)"/>
+  <!-- 3D Specular Top Rim -->
+  <path d="M 18,1 L 982,1" stroke="url(#topBevel)" stroke-width="1.5" stroke-linecap="round"/>
+
+  
+  <g>
+    
+    <!-- Stat Tile 1 -->
+    <g transform="translate(36, 34)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#06B6D4"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">38</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">TOTAL CONTRIBUTIONS</text>
+    </g>
+    <!-- Stat Tile 2 -->
+    <g transform="translate(272, 34)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#6366F1"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">34</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">COMMITS PUSHED</text>
+    </g>
+    <!-- Stat Tile 3 -->
+    <g transform="translate(508, 34)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#10B981"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">PULL REQUESTS</text>
+    </g>
+    <!-- Stat Tile 4 -->
+    <g transform="translate(744, 34)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#38BDF8"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">ISSUES RESOLVED</text>
+    </g>
+    <!-- Stat Tile 5 -->
+    <g transform="translate(36, 136)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#06B6D4"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">1 days</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">ACTIVE STREAK</text>
+    </g>
+    <!-- Stat Tile 6 -->
+    <g transform="translate(272, 136)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#6366F1"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">2 days</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">LONGEST STREAK</text>
+    </g>
+    <!-- Stat Tile 7 -->
+    <g transform="translate(508, 136)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#F59E0B"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">STARS EARNED</text>
+    </g>
+    <!-- Stat Tile 8 -->
+    <g transform="translate(744, 136)" filter="url(#tileDropShadow)">
+      <rect width="220" height="88" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1"/>
+      <rect x="1" y="1" width="218" height="1" rx="0.5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="0" y="24" width="3.5" height="40" rx="1.75" fill="#10B981"/>
+      <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">0</text>
+      <text x="18" y="70" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10.5" font-weight="600" fill="#94A3B8" letter-spacing="0.5">COMMUNITY FOLLOWERS</text>
+    </g>
+    
+  <g transform="translate(36, 256)">
+    <text x="0" y="14" font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" font-weight="600" fill="#94A3B8" letter-spacing="1">CORE CODEBASE LANGUAGES</text>
+<rect x="0.0" y="26" width="482.4" height="10" rx="3" fill="#3572A5"/><rect x="484.4" y="26" width="212.1" height="10" rx="3" fill="#e34c26"/><rect x="698.6" y="26" width="83.6" height="10" rx="3" fill="#3178c6"/><rect x="784.1" y="26" width="79.0" height="10" rx="3" fill="#f1e05a"/><rect x="865.2" y="26" width="39.4" height="10" rx="3" fill="#00ADD8"/><rect x="906.6" y="26" width="31.4" height="10" rx="3" fill="#663399"/>
+      <circle cx="5" cy="52" r="4.5" fill="#3572A5"/>
+      <text x="16" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">Python <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">52.0%</tspan></text>
+      <circle cx="315" cy="52" r="4.5" fill="#e34c26"/>
+      <text x="326" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">HTML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">22.9%</tspan></text>
+      <circle cx="625" cy="52" r="4.5" fill="#3178c6"/>
+      <text x="636" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">TypeScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">9.0%</tspan></text>
+      <circle cx="5" cy="74" r="4.5" fill="#f1e05a"/>
+      <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">JavaScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">8.5%</tspan></text>
+      <circle cx="315" cy="74" r="4.5" fill="#00ADD8"/>
+      <text x="326" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">Go <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">4.2%</tspan></text>
+      <circle cx="625" cy="74" r="4.5" fill="#663399"/>
+      <text x="636" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="12" font-weight="500" fill="#F8FAFC">CSS <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="11" fill="#64748B">3.4%</tspan></text>
+  </g>
+  </g>
+
+</svg>
