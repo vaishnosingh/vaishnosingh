@@ -1,136 +1,92 @@
-<!-- ═══════════════ ANIMATED HEADER ═══════════════ -->
-<p align="center">
-  <a href="https://github.com/vaishnosingh">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=Vaishno%20Kumar%20Singh&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20Python%20%7C%20AI%20%26amp%3B%20ML&descAlignY=58&descSize=20" alt="header" width="100%"/>
-  </a>
-</p>
+<div align="center">
 
-<!-- ═══════════════ TYPING ANIMATION ═══════════════ -->
-<p align="center">
-  <a href="https://github.com/vaishnosingh">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=750&height=60&lines=Hi+%F0%9F%91%8B%2C+I'm+Vaishno+Kumar+Singh;A+passionate+software+developer+from+India+%F0%9F%87%AE%F0%9F%87%B3;Building+AI+%26+ML+with+Python+%F0%9F%90%8D;Currently+learning+Golang+%F0%9F%90%B9;Shipping+APIs+with+FastAPI+%E2%9A%A1;Turning+coffee+into+code+%E2%98%95" alt="Typing SVG" />
-  </a>
-</p>
+<a href="https://github.com/vaishnosingh"><img src="./assets/hero.svg" alt="Vaishno Kumar Singh, software developer" width="100%"/></a>
 
-<p align="center">
-  <a href="https://github.com/vaishnosingh">
-    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fhits.dwyl.com%2Fvaishnosingh%2Fvaishnosingh.json&style=for-the-badge&label=Profile%20Views&color=0e75b6" alt="profile views" />
-  </a>
-  <a href="https://github.com/vaishnosingh?tab=followers">
-    <img src="https://img.shields.io/github/followers/vaishnosingh?label=Followers&style=for-the-badge&logo=github&color=8957e5" alt="followers" />
-  </a>
-  <img src="https://img.shields.io/badge/Made%20in-India-ff9933?style=for-the-badge" alt="made in india" />
-</p>
+<br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
+<img src="https://komarev.com/ghpvc/?username=vaishnosingh&label=PROFILE+VIEWS&style=for-the-badge&color=E8348A&labelColor=120E2B" alt="profile views"/>
+<a href="https://github.com/vaishnosingh?tab=followers"><img src="https://img.shields.io/github/followers/vaishnosingh?label=FOLLOWERS&style=for-the-badge&logo=github&color=FFB400&labelColor=120E2B&logoColor=white" alt="followers"/></a>
+<img src="https://img.shields.io/badge/MADE%20IN-INDIA-FF9933?style=for-the-badge&labelColor=138808" alt="made in India"/>
+<img src="https://img.shields.io/badge/FUELLED%20BY-COFFEE-1FC6B4?style=for-the-badge&logo=coffeescript&logoColor=white&labelColor=120E2B" alt="fuelled by coffee"/>
 
-## 🧑‍💻 About Me
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
-```python
-class VaishnoKumarSingh:
-    def __init__(self):
-        self.location   = "India 🇮🇳"
-        self.role       = "Software Developer"
-        self.working_on = ["Python", "Artificial Intelligence", "Machine Learning"]
-        self.learning   = ["Golang", "TensorFlow"]
-        self.ask_me_about = ["Python", "Data Structures & Algorithms"]
-        self.fun_fact   = "I think I am funny 🌝"
+<h2>🧑‍💻 About me</h2>
 
-    def say_hi(self):
-        print("Thanks for stopping by! Let's build something awesome. 🚀")
+<img src="./assets/about.svg" alt="about.py: Vaishno's profile written as a Python class" width="100%"/>
 
-me = VaishnoKumarSingh()
-me.say_hi()
-```
+<br/><br/>
 
-<table>
+<table align="center">
   <tr>
-    <td>🔭 I'm currently working on <b>Python Artificial Intelligence & Machine Learning</b></td>
-  </tr>
-  <tr>
-    <td>🌱 I'm currently learning <b>Golang and TensorFlow</b></td>
-  </tr>
-  <tr>
-    <td>💬 Ask me about <b>Python, Data Structures & Algorithms</b></td>
-  </tr>
-  <tr>
-    <td>📫 Reach me at <b><a href="mailto:vaishnosingh9@gmail.com">vaishnosingh9@gmail.com</a></b></td>
-  </tr>
-  <tr>
-    <td>⚡ Fun fact: <b>I think I am funny 🌝</b> (the jury is still out)</td>
+    <td align="center" width="25%"><h3>🔭</h3><b>Working on</b><br/>Python, AI and ML</td>
+    <td align="center" width="25%"><h3>🌱</h3><b>Learning</b><br/>Golang and TensorFlow</td>
+    <td align="center" width="25%"><h3>💬</h3><b>Ask me about</b><br/>Python, Data Structures &amp; Algorithms</td>
+    <td align="center" width="25%"><h3>📫</h3><b>Reach me</b><br/><a href="mailto:vaishnosingh9@gmail.com">vaishnosingh9@gmail.com</a></td>
   </tr>
 </table>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
+<sub>⚡ Fun fact: I think I am funny 🌝 &nbsp;(the jury is still out)</sub>
 
-## 🛠️ Languages & Tools
+<img src="./assets/divider.svg" width="100%" alt=""/>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=py,go,fastapi,django,postgres,mysql,pytorch,tensorflow,opencv,sklearn,git,linux&perline=6" alt="tech stack" />
-</p>
+<h2>🛠️ Tech stack</h2>
 
-<div align="center">
+<img src="./assets/skills.svg" alt="Python, Go, FastAPI, Django, PostgreSQL, MySQL, PyTorch, TensorFlow, OpenCV, Scikit-Learn, Git, Linux" width="100%"/>
 
-| 🧠 Focus | Tools |
-|:--|:--|
-| **Languages** | Python · Go |
-| **Backend** | FastAPI · Django |
-| **Databases** | PostgreSQL · MySQL |
-| **AI / ML / CV** | PyTorch · TensorFlow · OpenCV · Scikit-Learn |
-| **Tools & OS** | Git · Linux |
+<br/>
+
+<table align="center">
+  <tr><td align="right"><b>Languages</b></td><td><img src="https://skillicons.dev/icons?i=py,go" alt="Python, Go"/></td></tr>
+  <tr><td align="right"><b>Backend</b></td><td><img src="https://skillicons.dev/icons?i=fastapi,django" alt="FastAPI, Django"/></td></tr>
+  <tr><td align="right"><b>Databases</b></td><td><img src="https://skillicons.dev/icons?i=postgres,mysql" alt="PostgreSQL, MySQL"/></td></tr>
+  <tr><td align="right"><b>AI / ML / CV</b></td><td><img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn" alt="PyTorch, TensorFlow, OpenCV, Scikit-Learn"/></td></tr>
+  <tr><td align="right"><b>Tools &amp; OS</b></td><td><img src="https://skillicons.dev/icons?i=git,linux" alt="Git, Linux"/></td></tr>
+</table>
+
+<!--
+  FEATURED PROJECTS (optional): uncomment and replace REPO_NAME with your repo names.
+
+  <img src="./assets/divider.svg" width="100%" alt=""/>
+  <h2>🚀 Featured projects</h2>
+  <a href="https://github.com/vaishnosingh/REPO_NAME"><img src="https://github-readme-stats.vercel.app/api/pin/?username=vaishnosingh&repo=REPO_NAME&bg_color=120E2B&border_color=2A2060&title_color=FFB400&icon_color=E8348A&text_color=F7EEDC&border_radius=14" alt="REPO_NAME"/></a>
+-->
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<h2>📊 GitHub stats</h2>
+
+<img height="195" src="https://github-readme-stats.vercel.app/api?username=vaishnosingh&show_icons=true&include_all_commits=true&count_private=true&bg_color=120E2B&border_color=2A2060&title_color=FFB400&icon_color=E8348A&text_color=F7EEDC&ring_color=1FC6B4&border_radius=14" alt="GitHub stats"/>
+<img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaishnosingh&layout=donut&langs_count=8&bg_color=120E2B&border_color=2A2060&title_color=FFB400&text_color=F7EEDC&border_radius=14" alt="Top languages"/>
+
+<img src="https://streak-stats.demolab.com/?user=vaishnosingh&background=120E2B&border=2A2060&stroke=2A2060&ring=E8348A&fire=FFB400&currStreakNum=F7EEDC&sideNums=F7EEDC&currStreakLabel=FFB400&sideLabels=A79FC9&dates=A79FC9&border_radius=14" alt="Contribution streak"/>
+
+<img src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/activity-graph.svg" alt="Contribution activity graph" width="100%"/>
+
+<h2>🏆 Trophies</h2>
+
+<img src="https://trophy.ryglcloud.net/?username=vaishnosingh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&column=7" alt="GitHub trophies"/>
+
+<h2>🐍 Contribution snake</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg"/>
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg" width="100%"/>
+</picture>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+<h2>🌐 Connect with me</h2>
+
+<a href="https://www.linkedin.com/in/vshnsngh333"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://instagram.com/vshnsngh"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://www.codechef.com/users/vshn_sngh"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef"/></a>
+<a href="https://www.hackerrank.com/@vaishnosingh9"><img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank"/></a>
+<a href="mailto:vaishnosingh9@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+
+<br/><br/>
+
+<img src="./assets/footer.svg" alt="Thanks for stopping by. Let's build something great together." width="100%"/>
 
 </div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=vaishnosingh&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaishnosingh&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="top languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=vaishnosingh&theme=tokyonight&hide_border=true" alt="streak" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/activity-graph.svg" alt="activity graph" width="100%" />
-</p>
-
-## 🏆 Trophies
-
-<p align="center">
-  <img src="https://trophy.ryglcloud.net/?username=vaishnosingh&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&column=7" alt="trophies" />
-</p>
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg" />
-    <img alt="contribution snake" src="https://raw.githubusercontent.com/vaishnosingh/vaishnosingh/output/github-snake.svg" width="100%" />
-  </picture>
-</p>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="divider">
-
-## 🌐 Connect With Me
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/vshnsngh333"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://instagram.com/vshnsngh"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="https://www.codechef.com/users/vshn_sngh"><img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" /></a>
-  <a href="https://www.hackerrank.com/@vaishnosingh9"><img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black" alt="HackerRank" /></a>
-  <a href="mailto:vaishnosingh9@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2500&pause=800&color=A78BFA&center=true&vCenter=true&width=600&lines=Thanks+for+visiting+my+profile+%E2%9C%A8;Star+a+repo+if+you+liked+something+%E2%AD%90;Let's+build+something+great+together+%F0%9F%9A%80" alt="footer typing" />
-</p>
-
-<!-- ═══════════════ ANIMATED FOOTER ═══════════════ -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=140&section=footer" alt="footer" width="100%"/>
-</p>
