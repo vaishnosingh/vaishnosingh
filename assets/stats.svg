@@ -55,17 +55,17 @@
       <text x="18" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" fill="#94A3B8">Verified Contributor</text>
     </g>
   <g transform="translate(36, 0)">
-    <rect x="0.0" y="174" width="343.4" height="10" rx="3" fill="#38BDF8"/><rect x="345.4" y="174" width="315.5" height="10" rx="3" fill="#818CF8"/><rect x="662.9" y="174" width="213.4" height="10" rx="3" fill="#06B6D4"/><rect x="878.3" y="174" width="46.4" height="10" rx="3" fill="#10B981"/><rect x="926.7" y="174" width="46.4" height="10" rx="3" fill="#F59E0B"/>
+    <rect x="0.0" y="174" width="315.5" height="10" rx="3" fill="#38BDF8"/><rect x="317.5" y="174" width="297.0" height="10" rx="3" fill="#818CF8"/><rect x="616.5" y="174" width="194.9" height="10" rx="3" fill="#06B6D4"/><rect x="813.4" y="174" width="83.5" height="10" rx="3" fill="#10B981"/><rect x="898.9" y="174" width="46.4" height="10" rx="3" fill="#F59E0B"/>
   </g>
   
       <circle cx="41" cy="205" r="4" fill="#38BDF8"/>
-      <text x="51" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">QML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">37%</tspan></text>
+      <text x="51" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">QML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">34%</tspan></text>
       <circle cx="229" cy="205" r="4" fill="#818CF8"/>
-      <text x="239" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">TypeScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">34%</tspan></text>
+      <text x="239" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">TypeScript <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">32%</tspan></text>
       <circle cx="417" cy="205" r="4" fill="#06B6D4"/>
-      <text x="427" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">HTML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">23%</tspan></text>
+      <text x="427" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">HTML <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">21%</tspan></text>
       <circle cx="605" cy="205" r="4" fill="#10B981"/>
-      <text x="615" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">Kotlin <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">5%</tspan></text>
+      <text x="615" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">Kotlin <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">9%</tspan></text>
       <circle cx="793" cy="205" r="4" fill="#F59E0B"/>
       <text x="803" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif" font-size="11" font-weight="500" fill="#F8FAFC">Python <tspan font-family="'JetBrains Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace" font-size="10" fill="#64748B">5%</tspan></text>
 </svg>
